@@ -1,0 +1,173 @@
+@charset "UTF-8";
+html {
+  font-size: 12px;
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+
+  ::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+}
+body {
+  background-color: rgb(228, 228, 228);
+  font-family: Helvetica;
+  width: 100%;
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+p,
+li {
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* ----------黏在上面的頭部 ---------- */
+.navbar {
+  background-color: rgb(242, 228, 121);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  height: 5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* ---------- 主視覺 ---------- */
+.KV {
+  width: 100%;
+  position: relative;
+
+  img.bg {
+    width: 100%;
+    margin: 0;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .dj_bg {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 64%;
+    width: 33%;
+    .blur {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background: hsla(343, 79%, 59%, 1);
+      filter: blur(2rem);
+      z-index: -1;
+    }
+    img.dj {
+      width: 100%;
+    }
+  }
+}
+
+/* ---------- 跑馬燈 ---------- */
+marquee {
+  font-size: 5rem;
+  background-color: hsla(138, 93%, 57%, 1);
+  padding: 0.2rem;
+}
+
+main {
+  padding: 0 5rem;
+
+  /* ---------- 邀請文 ---------- */
+  .invitation {
+    display: flex;
+    padding: 24px;
+
+    img.DD_photo {
+      width: 36%;
+      object-fit: contain;
+    }
+    .content {
+      margin: 24px;
+      width: 74%;
+    }
+  }
+
+  /* ---------- 交通方式 ---------- */
+  .how_to_get_here {
+    margin: 24px;
+    .content {
+      display: flex;
+      align-items: flex-start;
+    }
+    img.map {
+      width: 60%;
+      object-fit: contain;
+    }
+
+    ul {
+      width: 40%;
+      font-size: 2rem;
+    }
+  }
+
+  /* ---------- 注意事項 ---------- */
+  .notification {
+    margin: 24px;
+  }
+
+  /* ---------- 報名表單 ---------- */
+  .form {
+    margin: 48px;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    iframe {
+      width: 100%;
+    }
+  }
+}
+
+/* ---------- 喇叭按鈕 ---------- */
+.floating {
+  position: fixed;
+  top: 6rem;
+  right: 2rem;
+  .speaker {
+    width: 3.5rem;
+    object-fit: contain;
+    cursor: pointer;
+  }
+}
+
+/* ---------- 腳腳 ---------- */
+footer {
+  background-color: rgb(242, 228, 121);
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
