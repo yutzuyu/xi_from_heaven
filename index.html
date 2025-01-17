@@ -5,9 +5,16 @@
     <meta name="description" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet/less" type="text/css" href="styles.less" />
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.20.0/matter.min.js"
+      integrity="sha512-6+7rTBmR6pRFe9fa0vCFjFaHZj/XYa7774bEBzRtxgdpIJOS++R3cKd6Prg/eJmxtsJotd8KAg4g57uuVQsZKA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script>
       less.watch();
     </script>
+    <script src="./script.js"></script>
     <title>囍從天降</title>
   </head>
   <body>
@@ -19,6 +26,7 @@
     </header>
 
     <!--------------- 主視覺 --------------->
+    <div class="matter"></div>
     <div class="KV">
       <!-- <div>
         <img src="./素材/elements/囍1.png" alt="囍"> 
@@ -106,7 +114,7 @@
     <!--------------- 喇叭按鈕 --------------->
     <div class="floating">
       <img class="speaker" src="./素材/img/00喇叭.png" alt="" />
-      <!-- <img class="speaker" src="./素材/img/00靜音.png" alt="" /> -->
+      <button class="stop_btn">clear</button>
     </div>
 
     <!--------------- 腳腳 --------------->
