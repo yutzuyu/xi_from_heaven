@@ -14,7 +14,10 @@
     <script>
       less.watch();
     </script>
-    <script src="./script.js"></script>
+    <script type="module">
+      import main from "./script.js";
+      main();
+    </script>
     <title>囍從天降</title>
   </head>
   <body>
@@ -25,8 +28,8 @@
       <a href="#form">報名表單</a>
     </header>
 
-    <!--------------- 主視覺 --------------->
     <div class="matter"></div>
+    <!--------------- 主視覺 --------------->
     <div class="KV">
       <!-- <div>
         <img src="./素材/elements/囍1.png" alt="囍"> 
